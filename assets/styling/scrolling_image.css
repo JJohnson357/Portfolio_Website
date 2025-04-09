@@ -1,0 +1,53 @@
+.scrolling-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.scrolling-images {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    width: max-content; /* Allow content to determine width */
+    animation: scroll 40s linear infinite; /* Adjust time to control speed */
+}
+
+.scrolling-images img {
+    height: 300px; /* Set desired height */
+    margin: 0 10px; /* Add spacing between images */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: rounds the corners of the images */
+    transition: transform 0.3s ease; /* Smooth animation when hovering */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Apply purple shadow (#8158a1) to odd-numbered images */
+/* .scrolling-images img:nth-child(odd) {
+    box-shadow: 0 0px 15px rgba(129, 88, 161, 0.7);
+} */
+
+/* Apply blue shadow (#838ec7) to even-numbered images */
+/* .scrolling-images img:nth-child(even) {
+    box-shadow: 0 0 15px rgba(157, 165, 209, 0.7);
+} */
+
+/* Optional: add a subtle hover effect */
+.scrolling-images img:hover {
+    transform: translateY(-5px);
+    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* This should be adjusted based on your content width */
+        transform: translateX(-50%);
+    }
+}
+
+/* Optional: pause animation on hover */
+/* .scrolling-container:hover .scrolling-images {
+    animation-play-state: paused;
+} */

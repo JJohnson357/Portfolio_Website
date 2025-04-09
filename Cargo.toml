@@ -1,0 +1,71 @@
+[package]
+name = "portfolio_website"
+version = "0.1.0"
+authors = ["Joe"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dioxus = { version = "0.6.0", features = ["router"] }
+web-sys = { version = "0.3", features = ["Document", "Element", "HtmlAnchorElement", "Window"] }
+
+[features]
+default = ["web"]
+# The feature that are only required for the web = ["dioxus/web"] build target should be optional and only enabled in the web = ["dioxus/web"] feature
+web = ["dioxus/web"]
+# The feature that are only required for the desktop = ["dioxus/desktop"] build target should be optional and only enabled in the desktop = ["dioxus/desktop"] feature
+desktop = ["dioxus/desktop"]
+# The feature that are only required for the mobile = ["dioxus/mobile"] build target should be optional and only enabled in the mobile = ["dioxus/mobile"] feature
+mobile = ["dioxus/mobile"]
+
+[profile]
+
+[profile.wasm-dev]
+inherits = "dev"
+opt-level = 1
+
+[profile.wasm-release]
+inherits = "release"
+
+[profile.server-dev]
+inherits = "dev"
+
+[profile.server-release]
+inherits = "release"
+
+[profile.ios-dev]
+inherits = "dev"
+
+[profile.ios-release]
+inherits = "release"
+
+[profile.android-dev]
+inherits = "dev"
+
+[profile.android-release]
+inherits = "release"
+
+[profile.windows-dev]
+inherits = "dev"
+
+[profile.windows-release]
+inherits = "release"
+
+[profile.macos-dev]
+inherits = "dev"
+
+[profile.macos-release]
+inherits = "release"
+
+[profile.linux-dev]
+inherits = "dev"
+
+[profile.linux-release]
+inherits = "release"
+
+[profile.liveview-dev]
+inherits = "dev"
+
+[profile.liveview-release]
+inherits = "release"

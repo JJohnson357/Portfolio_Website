@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="285" height="311" viewBox="0 0 285 311" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter color-interpolation-filters="sRGB" x="-144" y="-214" width="146" height="216" id="filter_1">
+      <feFlood flood-opacity="0" result="BackgroundImageFix_1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" in="SourceAlpha" />
+      <feMorphology radius="13" operator="dilate" in="SourceAlpha" />
+      <feOffset dx="0" dy="0" />
+      <feGaussianBlur stdDeviation="14.5" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.702 0 0 0 0 0.651 0 0 0 0 0.757 0 0 0 0.169 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix_1" result="Shadow_2" />
+      <feBlend mode="normal" in="SourceGraphic" in2="Shadow_2" result="Shape_3" />
+    </filter>
+  </defs>
+  <g>
+    <rect width="285" height="311" fill="#131416" fill-rule="evenodd" fill-opacity="0" />
+    <path d="M0 108C0 48.3532 32.6832 0 73 0C113.317 0 146 48.3532 146 108C146 167.647 113.317 216 73 216C32.6832 216 0 167.647 0 108Z" fill="#C8E6C9" fill-rule="evenodd" fill-opacity="0" filter="url(#filter_1)" transform="translate(69 43)" />
+    <g transform="translate(93 116)">
+      <rect width="78" height="13" fill="#5364C5" transform="translate(67 0)" />
+      <rect width="30" height="105" fill="#5364C5" transform="translate(67 4)" />
+      <path d="M31.0064 0C31.0022 0.16613 31 0.332809 31 0.5C31 10.7173 39.0589 19 49 19C58.9411 19 67 10.7173 67 0.5C67 0.332809 66.9978 0.16613 66.9936 0L96.9967 0C96.9989 0.166435 97 0.333107 97 0.5C97 23.9721 75.2858 43 48.5 43C21.7142 43 0 23.9721 0 0.5C0 0.333107 0.00109778 0.166435 0.00328736 0L31.0064 0Z" fill="#5364C5" transform="translate(0 108)" />
+    </g>
+    <g transform="matrix(-1 0 0 -1 192 215)">
+      <rect width="78" height="13" fill="#651BA1" transform="matrix(-1 -0 -0 -1 145 13)" />
+      <rect width="30" height="105" fill="#651BA1" transform="matrix(-1 -0 -0 -1 97 109)" />
+      <path d="M31.0064 0C31.0021 0.16613 31 0.332809 31 0.5C31 10.7173 39.0589 19 49 19C58.9411 19 67 10.7173 67 0.5C67 0.332809 66.9978 0.16613 66.9935 0L96.9967 0C96.9989 0.166435 97 0.333107 97 0.5C97 23.9721 75.2858 43 48.5 43C21.7142 43 0 23.9721 0 0.5C0 0.333107 0.00109778 0.166435 0.00328736 0L31.0064 0Z" fill="#651BA1" transform="translate(0 108)" />
+    </g>
+  </g>
+</svg>
