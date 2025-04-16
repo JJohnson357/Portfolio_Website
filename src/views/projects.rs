@@ -24,7 +24,7 @@ pub fn Projects() -> Element {
 
             div { class: "projects-container",
                 ProjectCard {
-                    title: "ModiFi",
+                    title: "ModiFi - (Modularity)",
                     date: "2023-2025",
                     description: "A ruggedized wireless replacement for cable harnesses in aerospace vehicles, featuring fault tolerance and 
                     WiFi HaLoW support.",
@@ -33,7 +33,7 @@ pub fn Projects() -> Element {
                     external_url: Some("https://modularitywireless.com/products/modifi".to_string()),
                 }
                 ProjectCard {
-                    title: "MODEM",
+                    title: "MODEM - (Modularity)",
                     date: "2023-2025",
                     description: "A Rust (Axum + Dioxus)-based desktop application for real-time data visualization, remote and local network management 
                     of IoT devices, and more.",
@@ -42,7 +42,7 @@ pub fn Projects() -> Element {
                     external_url: Some("https://modularitywireless.com/products/modem".to_string()),
                 }
                 ProjectCard {
-                    title: "HOST",
+                    title: "HOST - (Modularity)",
                     date: "2021-2022",
                     description: "An ESPA-class smallsat designed for operation in SSO-LEO. Modularized structures, subsystems and payload interfaces to 
                     enable a \"Real Estate\" - like lease based approach to customer procurement for scientific, DoD and commercial payloads.",
@@ -51,7 +51,7 @@ pub fn Projects() -> Element {
                     external_url: None,
                 }
                 ProjectCard {
-                    title: "CUBIC-16",
+                    title: "CUBIC-16 - (Modularity)",
                     date: "2021-2022",
                     description: "A 16U cubesat to test core systems in HOST in a rapid and low(ish)-cost manner.",
                     image: CUBIC16_IMAGE,
@@ -59,7 +59,7 @@ pub fn Projects() -> Element {
                     external_url: None,
                 }
                 ProjectCard {
-                    title: "DRIP",
+                    title: "DRIP - (ERAU)",
                     date: "2022",
                     description: "Researching, designing and developing a prototype to determine the feasibility of space-based debris detection and 
                     classification with stereo-optic camera systems.",
@@ -68,7 +68,7 @@ pub fn Projects() -> Element {
                     external_url: Some("https://arc.aiaa.org/doi/10.2514/6.2022-4276".to_string()),
                 }
                 ProjectCard {
-                    title: "EagleSat-II",
+                    title: "EagleSat-II - (ERAU)",
                     date: "2022",
                     description: "A 3U cubesat planned to launch in mid to late 2025. Includes an in-house developed payload to monitor the degradation
                     of multiple types of commercial computer memory when exposed to radiation in Low Earth Orbit. Development included the bring-up of 

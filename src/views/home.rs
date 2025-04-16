@@ -31,5 +31,10 @@ pub fn Home() -> Element {
         }
         div { style: "text-align: center; margin-top: 10px; font-size: 1.2rem; font-weight: bold;", "Welcome to my workshop."}
         ImageScrollingBar { images }
+        // TODO: Get rid of these when the time is right
+        div { style: "color: yellow; text-align: center; margin-top: 10px; font-size: 1.2rem; font-weight: bold;", "This website is under construction!"}
+        div { style: "color: yellow; text-align: center; margin-top: 10px; font-size: 1.2rem; font-weight: bold;", "This website is under construction!"}
+        div { style: "color: yellow; text-align: center; margin-top: 10px; font-size: 1.2rem; font-weight: bold;", "This website is under construction!"}
+        div { style: "color: yellow; text-align: center; margin-top: 10px; font-size: 1.2rem; font-weight: bold;", "This website is under construction!"}
     }
 }
