@@ -7,3 +7,5 @@ pub mod scrolling_image_bar;
 pub mod resume;
 
 pub mod footer;
+
+pub mod project_card;

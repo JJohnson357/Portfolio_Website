@@ -9,6 +9,12 @@ edition = "2021"
 [dependencies]
 dioxus = { version = "0.6.0", features = ["router"] }
 web-sys = { version = "0.3", features = ["Document", "Element", "HtmlAnchorElement", "Window"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+gloo-console = "0.3"
+reqwest = { version = "0.11", features = ["json"] }
+web-time = "*"
+async-std = "*"
 
 [features]
 default = ["web"]

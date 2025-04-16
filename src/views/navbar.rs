@@ -21,34 +21,40 @@ pub fn Navbar() -> Element {
 
     rsx! {
         document::Link { rel: "stylesheet", href: NAVBAR_CSS }
-
-        div { id: "navbar",
-            div { style: "display: flex; flex-direction: row; align-items: center; justify-items: center;",
-                img { src: JJ, style: "width: 70px" }
-                div { style: "font-size: 34px; color: #ccc;", "Joe Johnson" }
+        div { style: "display: flex; flex-direction: column; min-height: 100vh;", // 👈 This is key
+            div { id: "navbar",
+                div { style: "display: flex; flex-direction: row; align-items: center; justify-items: center;",
+                    img { src: JJ, style: "width: 70px" }
+                    div { style: "font-size: 34px; color: #ccc;", "Joe Johnson" }
+                }
+                div { class: "nav-links",
+                    Link { to: Route::Home {}, class: is_active(Route::Home {}), "Home" }
+                    Link {
+                        to: Route::Resume {},
+                        class: is_active(Route::Resume {}),
+                        "Resume"
+                    }
+                    Link {
+                        to: Route::Projects {},
+                        class: is_active(Route::Projects {}),
+                        "Projects"
+                    }
+                    Link {
+                        to: Route::AboutMe {},
+                        class: is_active(Route::AboutMe {}),
+                        "About Me"
+                    }
+                    Link {
+                        to: Route::Contact {},
+                        class: is_active(Route::Contact {}),
+                        "Contact"
+                    }
+                }
             }
-            div { class: "nav-links",
-                Link { to: Route::Home {}, class: is_active(Route::Home {}), "Home" }
-                Link { to: Route::Resume {}, class: is_active(Route::Resume {}), "Resume" }
-                Link {
-                    to: Route::Projects {},
-                    class: is_active(Route::Projects {}),
-                    "Projects"
-                }
-                Link {
-                    to: Route::AboutMe {},
-                    class: is_active(Route::AboutMe {}),
-                    "About Me"
-                }
-                Link {
-                    to: Route::Contact {},
-                    class: is_active(Route::Contact {}),
-                    "Contact"
-                }
+            main { style: "flex: 1; display: flex; flex-direction: column; padding: 20px;", // 👈 Redundant with main.css but makes sure
+                Outlet::<Route> {}
             }
+            Footer {}
         }
-        main { Outlet::<Route> {} }
-
-        Footer {}
     }
 }
