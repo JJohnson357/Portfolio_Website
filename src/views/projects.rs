@@ -4,7 +4,7 @@ use crate::components::project_card::ProjectCard;
 
 const PROJECTS_CSS: Asset = asset!("assets/styling/projects.css");
 
-const MODIFI_IMAGE: Asset = asset!("assets/project_images/modifi_images/modifi.jpg");
+const MODIFI_IMAGE: Asset = asset!("assets/project_images/modifi_images/modifi.png");
 const MODEM_IMAGE: Asset = asset!("assets/project_images/modem_images/modem.png");
 const HOST_IMAGE: Asset = asset!("assets/project_images/host_images/host.png");
 const CUBIC16_IMAGE: Asset = asset!("assets/project_images/cubic-16_images/cubic16.png");
